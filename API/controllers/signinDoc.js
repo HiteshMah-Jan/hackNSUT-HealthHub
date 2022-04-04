@@ -1,24 +1,15 @@
 const jwt = require('jsonwebtoken');
 const secret = 'iAmVeryBadAtThis';
 
-Reponame: eEducation
-Filepath: https://github.com/HiteshMah-Jan/eEducation/blob/master/education_Android/AgoraEducation/app/src/main/AndroidManifest.xml#L10
-Data Category: Audio, Visual & Sensory Data
-Data Element: Audio Recordings
-Sensitivity: medium
-Confidence: high
-Matching string: android.permission.MODIFY_AUDIO_SETTINGS
-Code: `
+
 <uses-permission android:name="android.permission.RECORD_AUDIO" />
 <uses-permission android:name="android.permission.CAMERA" />
 <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 
-`
-
+	
 const handleSignin = (req,res,db,bcrypt,xss)=>{
 	const xssOptions = {
 		whiteList: [],
